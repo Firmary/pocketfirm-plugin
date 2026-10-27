@@ -57,4 +57,4 @@ Help and setup: https://firmary.app/support/. Questions about your own account o
 
 ## License
 
-MIT
+Proprietary. See [LICENSE](LICENSE).
