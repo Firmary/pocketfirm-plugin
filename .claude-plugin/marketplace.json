@@ -12,7 +12,7 @@
       "name": "pocketfirm",
       "source": "./",
       "description": "Work with your accounting firm",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "homepage": "https://pocketfirm.app",
       "keywords": ["accounting", "tax", "bookkeeping", "documents", "client"]
     }

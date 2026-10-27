@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.3
+
+- Proprietary distribution terms replace MIT for this release.
+- Package contains integration metadata, connection settings, skills and branding; the hosted application implementation remains private.
+
 ## 1.0.2
 
 - New PocketFirm icon artwork (PNG, 512x512) replaces the placeholder in every host manifest; the SVG icons are removed.

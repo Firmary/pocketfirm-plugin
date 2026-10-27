@@ -1,7 +1,7 @@
 {
   "name": "pocketfirm",
   "displayName": "PocketFirm",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Work with your accounting firm: see what it needs from you, answer its forms, upload requested documents, message it and download shared documents. You sign in with your PocketFirm account and the connection only reaches your own records. Disconnect at any time in PocketFirm under Settings > AI apps.",
   "author": {
     "name": "Firmary LLC",
