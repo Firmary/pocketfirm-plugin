@@ -1,0 +1,20 @@
+{
+  "name": "pocketfirm",
+  "owner": {
+    "name": "Firmary LLC",
+    "email": "support@firmary.app"
+  },
+  "metadata": {
+    "description": "PocketFirm: work with your accounting firm from your AI assistant."
+  },
+  "plugins": [
+    {
+      "name": "pocketfirm",
+      "source": "./",
+      "description": "Work with your accounting firm",
+      "version": "1.0.0",
+      "homepage": "https://pocketfirm.app",
+      "keywords": ["accounting", "tax", "bookkeeping", "documents", "client"]
+    }
+  ]
+}

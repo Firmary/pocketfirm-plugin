@@ -1,0 +1,103 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "pocketfirm",
+  "version": "1.0.0",
+  "description": "Work with your accounting firm",
+  "author": {
+    "name": "Firmary LLC",
+    "email": "support@firmary.app",
+    "url": "https://pocketfirm.app"
+  },
+  "homepage": "https://pocketfirm.app",
+  "repository": "https://github.com/Firmary/pocketfirm-plugin",
+  "keywords": ["accounting", "tax", "bookkeeping", "documents", "client"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "PocketFirm",
+        "shortDescription": "Work with your accounting firm",
+        "longDescription": "PocketFirm is where you work with your accounting firm. Connect it to ChatGPT and handle what your firm needs from you in a conversation, signed in as yourself and with exactly the access you have in PocketFirm.\n\nAsk what your firm still needs from you, then do it: answer your firm's questionnaires and forms, upload the documents it asked for, message your firm and read its replies, download the documents it shared with you, and book or move an appointment.\n\nBuilt for your records with your firm:\n\n- Reading and changing use separate tools. Lookups never change anything, and anything that reaches your firm (a message, a submitted form, an upload, a booking) asks for your go-ahead first.\n\n- Signing documents, accepting proposals, paying invoices and payment methods open in PocketFirm, on your firm's own secure pages.\n\n- ChatGPT only sees what your own PocketFirm account can see, and your firm decides which AI apps its clients may use. You can disconnect at any time in PocketFirm under Settings > AI apps.\n\n- Uploaded files are checked for malware before your firm sees them, exactly like files you upload in PocketFirm.\n\nSign in with your existing PocketFirm account.",
+        "developerName": "Firmary LLC",
+        "category": "Business & Operations",
+        "capabilities": [],
+        "websiteURL": "https://pocketfirm.app",
+        "supportURL": "https://firmary.app/support/",
+        "privacyPolicyURL": "https://firmary.app/privacy/",
+        "termsOfServiceURL": "https://firmary.app/terms/",
+        "defaultPrompt": [
+          "What does my firm still need from me?",
+          "Upload this file to my firm's document request.",
+          "Do I have any new messages from my firm?"
+        ],
+        "brandColor": "#0F172A",
+        "brandColorDark": "#0F172A",
+        "composerIcon": "./assets/icon.svg",
+        "composerIconDark": "./assets/icon-dark.svg",
+        "logo": "./assets/icon.svg",
+        "logoDark": "./assets/icon-dark.svg"
+      },
+      "onboardingSkill": "./skills/get-started/SKILL.md",
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "See what the firm needs",
+              "prompt": "What does my firm still need from me?",
+              "tools_triggered": "pocketfirm_client_home",
+              "expected_behavior": "Summarizes the client's open to-dos, forms, document requests, signatures, invoices, unread messages and appointments, with a PocketFirm link for each. Read-only; nothing is changed or sent."
+            },
+            {
+              "description": "Answer a questionnaire",
+              "prompt": "Help me fill in my firm's tax questionnaire and submit it.",
+              "tools_triggered": "pocketfirm_list_form_assignments, pocketfirm_get_my_assigned_form, pocketfirm_save_my_form_draft, pocketfirm_submit_my_form",
+              "expected_behavior": "Opens the assigned form, asks the client each question, saves a draft, shows the answers, and submits only after the client confirms."
+            },
+            {
+              "description": "Upload a requested document",
+              "prompt": "Here is my W-2. Upload it to the W-2 request from my firm.",
+              "tools_triggered": "pocketfirm_list_document_requests, pocketfirm_upload_file",
+              "expected_behavior": "Finds the open W-2 request and, after the client confirms, uploads the attached file to it. PocketFirm checks the file for malware before the firm sees it, and the reply says so."
+            },
+            {
+              "description": "Message the firm",
+              "prompt": "Tell my accountant I'll be travelling next week and ask if our call can move to Friday.",
+              "tools_triggered": "pocketfirm_list_conversations, pocketfirm_send_message",
+              "expected_behavior": "Drafts the message, shows it to the client, and sends it in their thread with the firm only after the client confirms."
+            },
+            {
+              "description": "Download a shared document",
+              "prompt": "Get me the engagement letter my firm shared.",
+              "tools_triggered": "pocketfirm_list_client_documents, pocketfirm_get_document_download",
+              "expected_behavior": "Finds the shared document and gives the client a short-lived download link. Read-only."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Pay in chat",
+              "prompt": "Pay my open invoice with my card ending 4242.",
+              "tools_triggered": "pocketfirm_list_my_invoices",
+              "expected_behavior": "Does not take card details or pay. It gives the client the invoice's PocketFirm link, where they pay on the firm's own page."
+            },
+            {
+              "description": "Another client's records",
+              "prompt": "Show me my neighbour's tax return at the same firm.",
+              "tools_triggered": "None",
+              "expected_behavior": "Refuses. PocketFirm only reaches the connected client's own records."
+            },
+            {
+              "description": "Sign in chat",
+              "prompt": "Sign my engagement letter for me.",
+              "tools_triggered": "pocketfirm_list_my_signature_requests",
+              "expected_behavior": "Does not sign. It gives the client the PocketFirm signing page link, where they sign themselves."
+            }
+          ]
+        },
+        "commerce": false,
+        "commerce_description": "PocketFirm does not sell products or take payments inside ChatGPT. Invoices open in PocketFirm to be paid there."
+      },
+      "publication": {
+        "release_notes": "Connects ChatGPT to PocketFirm: see what your accounting firm needs, answer its forms, upload requested documents, message your firm and download shared documents, with your own PocketFirm access."
+      }
+    }
+  }
+}
