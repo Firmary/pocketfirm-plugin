@@ -1,7 +1,7 @@
 {
   "name": "pocketfirm",
   "displayName": "PocketFirm",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Work with your accounting firm",
   "author": {
     "name": "Firmary LLC",
@@ -11,7 +11,7 @@
   "homepage": "https://pocketfirm.app",
   "repository": "https://github.com/Firmary/pocketfirm-plugin",
   "keywords": ["accounting", "tax", "bookkeeping", "documents", "client"],
-  "icon": "./assets/icon.svg",
+  "icon": "./assets/icon.png",
   "documentationUrl": "https://github.com/Firmary/pocketfirm-plugin#readme",
   "supportUrl": "https://firmary.app/support/",
   "privacyPolicyUrl": "https://firmary.app/privacy/",
