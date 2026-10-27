@@ -1,0 +1,23 @@
+{
+  "name": "pocketfirm",
+  "version": "1.0.0",
+  "description": "Work with your accounting firm: see what it needs from you, answer its forms, upload requested documents, message it and download shared documents, signed in as yourself with your own PocketFirm access.",
+  "author": {
+    "name": "Firmary LLC",
+    "email": "support@firmary.app",
+    "url": "https://pocketfirm.app"
+  },
+  "homepage": "https://pocketfirm.app",
+  "repository": "https://github.com/Firmary/pocketfirm-plugin",
+  "keywords": ["pocketfirm"],
+  "logo": "assets/icon-512.png",
+  "supportUrl": "https://firmary.app/support/",
+  "privacyPolicyUrl": "https://firmary.app/privacy/",
+  "termsOfServiceUrl": "https://firmary.app/terms/",
+  "mcpServers": {
+    "pocketfirm": {
+      "type": "http",
+      "url": "https://app.pocketfirm.app/api/mcp"
+    }
+  }
+}

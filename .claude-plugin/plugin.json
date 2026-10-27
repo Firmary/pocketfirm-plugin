@@ -1,0 +1,24 @@
+{
+  "name": "pocketfirm",
+  "displayName": "PocketFirm",
+  "version": "1.0.0",
+  "description": "Work with your accounting firm",
+  "author": {
+    "name": "Firmary LLC",
+    "email": "support@firmary.app",
+    "url": "https://pocketfirm.app"
+  },
+  "homepage": "https://pocketfirm.app",
+  "repository": "https://github.com/Firmary/pocketfirm-plugin",
+  "keywords": ["accounting", "tax", "bookkeeping", "documents", "client"],
+  "icon": "./assets/icon.svg",
+  "supportUrl": "https://firmary.app/support/",
+  "privacyPolicyUrl": "https://firmary.app/privacy/",
+  "termsOfServiceUrl": "https://firmary.app/terms/",
+  "mcpServers": {
+    "pocketfirm": {
+      "type": "http",
+      "url": "https://app.pocketfirm.app/api/mcp"
+    }
+  }
+}
