@@ -18,7 +18,9 @@ Work through the client's open items one at a time, soonest due first.
      link, confirm which request it is for, then upload it with `pocketfirm_upload_file`. If the
      client does not have it, offer `pocketfirm_mark_document_request_not_applicable` with a short
      note they approve.
-   - **Signature or proposal**: give the PocketFirm link; the client signs or accepts there.
+   - **Signature**: give the PocketFirm link; the client signs there.
+   - **Proposal**: accepting commits the client to its services and fees, so they sign in again
+     to confirm; give them the link PocketFirm returns.
    - **Invoice**: give the PocketFirm link; the client pays there.
    - **Message waiting**: read the thread and help the client reply.
 3. After each item, say what was done and what is next. Finish with what is still open.

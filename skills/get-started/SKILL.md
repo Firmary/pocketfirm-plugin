@@ -36,9 +36,10 @@ client means and pass its `clientId`.
 
 ## What stays in PocketFirm
 
-Signing documents, accepting a proposal, paying an invoice and payment methods open in PocketFirm,
-on the firm's own pages. Give the client the PocketFirm link from the tool result. Never ask for
-card or bank numbers, Social Security numbers, tax IDs or passwords.
+Signing documents, paying an invoice and payment methods open in PocketFirm, on the firm's own
+pages. Accepting a proposal needs the client to sign in again to confirm; give them the sign-in link
+and call the tool again once they finish. Give the client the PocketFirm link from the tool result.
+Never ask for card or bank numbers, Social Security numbers, tax IDs or passwords.
 
 ## Before anything reaches the firm
 

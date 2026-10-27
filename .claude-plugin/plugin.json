@@ -12,6 +12,7 @@
   "repository": "https://github.com/Firmary/pocketfirm-plugin",
   "keywords": ["accounting", "tax", "bookkeeping", "documents", "client"],
   "icon": "./assets/icon.svg",
+  "documentationUrl": "https://github.com/Firmary/pocketfirm-plugin#readme",
   "supportUrl": "https://firmary.app/support/",
   "privacyPolicyUrl": "https://firmary.app/privacy/",
   "termsOfServiceUrl": "https://firmary.app/terms/",
