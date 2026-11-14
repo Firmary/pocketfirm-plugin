@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.4
+
+- MIT license (copyright 2026 Firmary) replaces the proprietary distribution terms. Every host manifest declares `MIT`.
+- Cursor manifest drops schema-invalid `author.url`, `supportUrl`, `privacyPolicyUrl`, and `termsOfServiceUrl`. Those links stay on the Claude, Grok, and ChatGPT manifests.
+- Adds `assets/logo-cursor.png` (512×512, the existing icon on a solid `#1C1C1B` plate) and points the Cursor manifest logo at it.
+- All manifests are at 1.0.4.
+
 ## 1.0.3
 
 - Proprietary distribution terms replace MIT for this release.

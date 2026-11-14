@@ -57,4 +57,4 @@ Help and setup: https://firmary.app/support/. Questions about your own account o
 
 ## License
 
-Proprietary. See [LICENSE](LICENSE). This public package contains only integration manifests, connection settings, user-facing skill instructions and branding. The hosted application implementation is maintained privately.
+[MIT](LICENSE). Copyright (c) 2026 Firmary. This public package contains only integration manifests, connection settings, user-facing skill instructions and branding. The hosted application implementation is maintained privately.
